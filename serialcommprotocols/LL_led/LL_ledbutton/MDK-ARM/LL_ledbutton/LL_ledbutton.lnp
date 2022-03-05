@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"ll_ledbutton\startup_stm32g071xx.o"
+"ll_ledbutton\main.o"
+"ll_ledbutton\stm32g0xx_it.o"
+"ll_ledbutton\stm32g0xx_hal_msp.o"
+"ll_ledbutton\stm32g0xx_hal_tim.o"
+"ll_ledbutton\stm32g0xx_hal_tim_ex.o"
+"ll_ledbutton\stm32g0xx_hal_rcc.o"
+"ll_ledbutton\stm32g0xx_hal_rcc_ex.o"
+"ll_ledbutton\stm32g0xx_ll_rcc.o"
+"ll_ledbutton\stm32g0xx_hal_flash.o"
+"ll_ledbutton\stm32g0xx_hal_flash_ex.o"
+"ll_ledbutton\stm32g0xx_hal_gpio.o"
+"ll_ledbutton\stm32g0xx_hal_dma.o"
+"ll_ledbutton\stm32g0xx_hal_dma_ex.o"
+"ll_ledbutton\stm32g0xx_ll_dma.o"
+"ll_ledbutton\stm32g0xx_hal_pwr.o"
+"ll_ledbutton\stm32g0xx_hal_pwr_ex.o"
+"ll_ledbutton\stm32g0xx_hal_cortex.o"
+"ll_ledbutton\stm32g0xx_hal.o"
+"ll_ledbutton\stm32g0xx_hal_exti.o"
+"ll_ledbutton\system_stm32g0xx.o"
+"ll_ledbutton\leddriver.o"
+"ll_ledbutton\bdriver.o"
+--library_type=microlib --strict --scatter "LL_ledbutton\LL_ledbutton.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LL_ledbutton.map" -o LL_ledbutton\LL_ledbutton.axf

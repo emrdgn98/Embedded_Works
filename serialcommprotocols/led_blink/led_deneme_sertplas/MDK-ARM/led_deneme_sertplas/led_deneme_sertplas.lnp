@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"led_deneme_sertplas\startup_stm32g071xx.o"
+"led_deneme_sertplas\main.o"
+"led_deneme_sertplas\stm32g0xx_it.o"
+"led_deneme_sertplas\stm32g0xx_hal_msp.o"
+"led_deneme_sertplas\stm32g0xx_hal_tim.o"
+"led_deneme_sertplas\stm32g0xx_hal_tim_ex.o"
+"led_deneme_sertplas\stm32g0xx_hal_uart.o"
+"led_deneme_sertplas\stm32g0xx_hal_uart_ex.o"
+"led_deneme_sertplas\stm32g0xx_hal_rcc.o"
+"led_deneme_sertplas\stm32g0xx_hal_rcc_ex.o"
+"led_deneme_sertplas\stm32g0xx_ll_rcc.o"
+"led_deneme_sertplas\stm32g0xx_hal_flash.o"
+"led_deneme_sertplas\stm32g0xx_hal_flash_ex.o"
+"led_deneme_sertplas\stm32g0xx_hal_gpio.o"
+"led_deneme_sertplas\stm32g0xx_hal_dma.o"
+"led_deneme_sertplas\stm32g0xx_hal_dma_ex.o"
+"led_deneme_sertplas\stm32g0xx_ll_dma.o"
+"led_deneme_sertplas\stm32g0xx_hal_pwr.o"
+"led_deneme_sertplas\stm32g0xx_hal_pwr_ex.o"
+"led_deneme_sertplas\stm32g0xx_hal_cortex.o"
+"led_deneme_sertplas\stm32g0xx_hal.o"
+"led_deneme_sertplas\stm32g0xx_hal_exti.o"
+"led_deneme_sertplas\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "led_deneme_sertplas\led_deneme_sertplas.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led_deneme_sertplas.map" -o led_deneme_sertplas\led_deneme_sertplas.axf
